@@ -1,0 +1,44 @@
+{
+  "name": "hashd-waitlist-api",
+  "version": "1.0.0",
+  "description": "Hashd Waitlist API with MongoDB",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "start:old": "node server.js",
+    "test": "jest --coverage --runInBand --silent",
+    "test:watch": "jest --watch",
+    "test:unit": "jest tests/unit --silent",
+    "test:integration": "jest tests/integration --silent",
+    "test:e2e": "jest tests/e2e --silent",
+    "test:verbose": "jest --coverage --runInBand",
+    "test:silent": "SILENT_TESTS=true jest --silent",
+    "test:sequential": "jest --coverage --runInBand --silent",
+    "prepare": "husky"
+  },
+  "keywords": [
+    "hashd",
+    "waitlist",
+    "api"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.3.1",
+    "ethers": "^6.9.0",
+    "express": "^4.18.2",
+    "express-rate-limit": "^8.2.1",
+    "mongodb": "^6.3.0",
+    "mongoose": "^9.0.0",
+    "resend": "^6.5.2"
+  },
+  "devDependencies": {
+    "husky": "^9.1.7",
+    "jest": "^30.2.0",
+    "nodemon": "^3.0.2",
+    "supertest": "^7.1.4"
+  }
+}

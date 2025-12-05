@@ -1,0 +1,22 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+# Add common paths where yarn might be installed
+export PATH="/usr/local/bin:/opt/homebrew/bin:$PATH"
+
+echo "🧪 Running tests before push..."
+
+# Try yarn first, fallback to npm if not found
+if command -v yarn >/dev/null 2>&1; then
+    yarn test
+else
+    echo "⚠️  yarn not found, using npm..."
+    npm test
+fi
+
+if [ $? -ne 0 ]; then
+  echo "❌ Tests failed! Push aborted."
+  exit 1
+fi
+
+echo "✅ All tests passed! Proceeding with push."

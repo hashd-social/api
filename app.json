@@ -1,0 +1,44 @@
+{
+  "name": "hashd-waitlist-api",
+  "description": "Hashd Waitlist API with MongoDB",
+  "repository": "https://github.com/hashd-social/api",
+  "keywords": ["node", "express", "mongodb", "waitlist"],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
+  "env": {
+    "NODE_ENV": {
+      "description": "Node environment",
+      "value": "production"
+    },
+    "MONGODB_URI": {
+      "description": "MongoDB connection string",
+      "required": true
+    },
+    "MONGODB_DB_NAME": {
+      "description": "Production database name",
+      "value": "hashd-production"
+    },
+    "MONGODB_TEST_DB_NAME": {
+      "description": "Test database name (for CI/CD)",
+      "value": "hashd-test"
+    },
+    "ADMIN_WALLET_ADDRESS": {
+      "description": "Admin wallet address for authentication",
+      "required": true
+    },
+    "FRONTEND_URL": {
+      "description": "Frontend URL for CORS",
+      "required": true
+    },
+    "RESEND_API_KEY": {
+      "description": "Resend API key for email service",
+      "required": true
+    }
+  },
+  "scripts": {
+    "test": "jest --coverage --runInBand"
+  }
+}
