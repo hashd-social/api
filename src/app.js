@@ -95,7 +95,7 @@ if (process.env.NODE_ENV !== 'production' && process.env.NODE_ENV !== 'test') {
 app.get('/', (req, res) => {
   res.json({ 
     success: true, 
-    message: 'Hashd Management API v1.0.0',
+    message: 'HASHdash v1.0.0',
   });
 });
 
@@ -106,7 +106,7 @@ app.get('/', (req, res) => {
 app.get('/health', (req, res) => {
   res.json({ 
     success: true, 
-    message: 'Hashd Management API is running',
+    message: 'HASHdash is running',
     endpoints: {
       health: '/health',
       waitlist: '/api/waitlist',

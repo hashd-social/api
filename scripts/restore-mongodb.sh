@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ###############################################################################
-# MongoDB Restore Script for HASHD Management API
+# MongoDB Restore Script for HASHdash API
 # 
 # This script restores a MongoDB database from a backup file.
 #

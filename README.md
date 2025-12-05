@@ -1,6 +1,6 @@
-# Hashd Management API
+# HASHdash API
 
-Optional backend service for HASHD admin frontend instances. Provides MongoDB storage and wallet-based authentication for waitlist management, email verification, and analytics. Not required for core protocol functionality—HASHD runs entirely on-chain without a backend.
+Backend service for the HASHD Management Portal. Used for waitlist handling, analytics, and operational tooling. Not part of the core protocol and not required by the official HASHD client.
 
 ## Getting Started
 
@@ -43,7 +43,7 @@ Root endpoint.
 ```json
 {
   "success": true,
-  "message": "Hashd Management API v1.0.0"
+  "message": "HASHdash API v1.0.0"
 }
 ```
 
@@ -54,7 +54,7 @@ Health check with endpoint information.
 ```json
 {
   "success": true,
-  "message": "Hashd Management API is running",
+  "message": "HASHdash API is running",
   "endpoints": {
     "health": "/health",
     "waitlist": "/api/waitlist",

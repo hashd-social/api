@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ###############################################################################
-# MongoDB Backup Script for HASHD Management API
+# MongoDB Backup Script for HASHdash API
 # 
 # This script creates automated backups of the MongoDB database
 # and uploads them to a secure location.
