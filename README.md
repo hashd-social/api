@@ -1,6 +1,6 @@
 # HASHdash API
 
-Backend service for the HASHD Management Portal. Used for waitlist handling, analytics, and operational tooling. Not part of the core protocol and not required by the official HASHD client.
+Backend service for the HASHdash Portal. Used by HASHD Team for waitlist management, analytics, operational tooling. Not part of the core protocol, NOT A DEPENDENCY OR CONTROL TOOL, and not required by the official HASHD client.
 
 ## Getting Started
 
